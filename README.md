@@ -7,7 +7,11 @@ This is a Python sample package (library). It is supposed to be used from the pr
 Install
 
 ```sh
-pip install moz-sample
+pip install moz-sample # install from PyPi (doesn't work)
+# or
+pip install moz-sample --extra-index-url https://test.pypi.org/simple # install from TestPyPi
+# or
+pip install git+https://github.com/mozkzki/moz-sample
 ```
 
 Coding
