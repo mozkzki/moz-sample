@@ -109,6 +109,18 @@ flake8 --max-line-length=100 --ignore=E203,W503 ./main
 make lint
 ```
 
+### 注意
+
+下記を合わせる事でパッケージとして認識され、`poetry install`でインストールされる。`-` (ハイフン) はパッケージ名に使うとNGなので注意。
+
+- パッケージ名 "`moz_sample`" (アンダースコア)
+- `pyproject.toml`の`name` "`moz-sample`" (ハイフン)
+
+```toml
+[tool.poetry]
+name = "moz-sample"
+```
+
 ### Packaging
 
 - Pip can be installed from `pyproject.toml` in version 19.02.
