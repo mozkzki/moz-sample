@@ -15,12 +15,13 @@ classifiers=[
     'License :: OSI Approved :: MIT License',
     'Topic :: Software Development :: Libraries',
     'Intended Audience :: Developers',
+    'Programming Language :: Python :: 3.7',
     'Programming Language :: Python :: 3.8',
     'Programming Language :: Python :: 3.9',
 ]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.7"
 
 [tool.poetry.dev-dependencies]
 flake8 = "3.9.1"
